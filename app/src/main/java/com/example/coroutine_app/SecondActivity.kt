@@ -20,7 +20,7 @@ class SecondActivity : AppCompatActivity() {
     lateinit var secondViewModel: SecondViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setContentView(R.layout.activity_second)
         //uncomment this to check viewModelScope... view model scope gets destroyed when this activity is destroyed and view model is closed
         /*Log.d("SecondActivity", "Second Activity started")
         secondViewModel = ViewModelProvider(this)[SecondViewModel::class.java];
